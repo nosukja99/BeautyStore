@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>ManagementPosServlet</servlet-name>
+        <servlet-class>naborBeauty.controller.ManagementPosServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>DisplayProductServlet</servlet-name>
+        <servlet-class>naborBeauty.controller.DisplayProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>naborBeauty.controller.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>naborBeauty.controller.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagementPosServlet</servlet-name>
+        <url-pattern> /ManagementPos</url-pattern>
+     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayProductServlet</servlet-name>
+        <url-pattern> /DisplayProduct</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern> /Update</url-pattern>
+     </servlet-mapping>
+          <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern> /Delete</url-pattern>
+     </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

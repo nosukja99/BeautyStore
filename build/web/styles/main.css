@@ -1,0 +1,47 @@
+/* The styles for the elements */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85.5%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1 {     
+    font-size: 250%;
+    color: red;
+    margin-bottom: .5em;    
+}
+br {
+    clear: both;
+}
+
+#quantity {
+    width: 2em;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+  
+    width: 50em;
+}
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+}
+.right {
+    text-align: right;
+}
+.centered {
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
